@@ -1,0 +1,51 @@
+#game{
+    width: 800px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#player{
+    width: 80px;
+    height: 80px;
+    background-image: url(img/rocket.png);
+    background-size: 80px 80px;
+    position: relative;
+    top: 220px;
+}
+
+#time{
+    top: 0px;
+    left:480;
+}
+
+@keyframes jump{
+    0%{top: 220px;}
+    30%{top: 0px;}
+    70%{top: 0px;}
+    100%{top: 220px;}
+}
+
+
+.animate{ 
+    animation: jump 300ms linear;
+
+}
+
+
+#block{
+    width: 40px;
+    height: 40px;
+    background-image: url(img/cosmonaut.jpg);
+    background-size: 40px 40px;
+    position: relative;
+    top: 180px;
+    left: 480px;
+    animation: block 2.5s infinite linear;
+}
+
+@keyframes block{
+    0%{left: 800px;}
+    100%{left: -20px;}
+}
+
